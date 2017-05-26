@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "myapp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Manoj Das</title>
+    
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <!-- load ngmessages -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+
+
+    <script src = "app.js"></script>
+    <script src = "controllers/blogsmallcontroller.js"></script>
+    <script src = "directives/blogsmalldirectives.js"></script>
+
+
+    
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/blog-home.css" rel="stylesheet">
+    <!-- SideBar Social Icons -->
+    <link href="css/social-icons.css" rel="stylesheet">
+
+    <!-- Footer css -->
+    <link href="css/footer.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <!-- try to include <div ng-include="'testfile.html'"></div> like this Double quatation and single quatation  -->
+    <div ng-include="'partial/header.html'"></div>
+     
+
+    <!-- try to include <div ng-include="'testfile.html'"></div> like this Double quatation and single quatation  -->
+    <div ng-include="'partial/social-sidebar.html'"></div>
+
+   
+
+    <!-- Page Content -->
+    <div class="container">
+    <div ng-view></div>
+
+    <hr>
+
+
+    <!-- Display Main Content -->
+     <!-- <div ng-view ng-if="loader===false"></div> -->
+
+     <!-- try to include <div ng-include="'testfile.html'"></div> like this Double quatation and single quatation  -->
+    <div ng-include="'partial/footer.html'"></div>
+
+    </div>
+    <!-- /.container -->
+
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+
+</html>

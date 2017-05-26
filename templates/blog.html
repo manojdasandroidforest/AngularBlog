@@ -1,0 +1,77 @@
+            <div class="row" ng-controller = "BlogSmallController">
+
+
+            <!-- Display Spinner -->
+
+               <!-- <div ng-if="loader===true" style="position: fixed; left: 50%; top: 50%;">
+                    <img src="images/ajaxLoader.gif"></img>
+                </div> -->
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+
+                <h1 class="page-header">
+                    Latest
+                    <small>- from angularjs Manoj Das</small>
+                </h1>
+
+
+
+               
+
+                <!-- First Blog Post -->
+                 <blog ng-repeat="latestPost in latestPosts | filter:qwery" name="{{latestPost.blogId}}"></blog>
+
+
+              <!--  <blog name="blog-small"><blog name="blog-innerFirst"><blog name="blog-innerSecond"></blog></blog></blog>
+                 -->
+               
+                <!-- Finish ng-repeat -->
+                
+               
+
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="previous">
+                        <a href="#">&larr; Older</a>
+                    </li>
+                    <li class="next">
+                        <a href="#">Newer &rarr;</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Search</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control" ng-model="qwery"/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" disabled>
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+
+                <!-- Blog Categories Well -->
+                 <div class="well">
+                    
+                    <p><img src="images/reviews_banner.jpg" width="320" class="img-responsive"></p>
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Like Us</h4>
+                    <p><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=340&height=154&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="320" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
